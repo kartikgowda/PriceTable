@@ -23,6 +23,7 @@
   */
 html,
 body {
+  font-family: 'Open Sans', sans-serif;
   height: 100%;
 }
 /*
@@ -72,4 +73,44 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body {
+  background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*? Removing Bullets */
+ul {
+  list-style: none;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-img {
+  max-width: 100%;
+  margin-top: 1em;
+}
+
+.pricing-plan {
+  border-bottom: #e1f1ff 1px solid;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
 }
