@@ -88,12 +88,13 @@ ul {
   list-style: none;
 }
 
+/* ! Panel */
 .panel {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   margin: auto;
-  padding: 20px;
+  padding: 15px 20px;
   width: 100%;
   max-width: 960px;
   display: flex;
@@ -102,15 +103,55 @@ ul {
   text-transform: uppercase;
 }
 
-.pricing-img {
-  max-width: 100%;
-  margin-top: 1em;
-}
-
 .pricing-plan {
   border-bottom: #e1f1ff 1px solid;
 }
 
 .pricing-plan:last-child {
   border-bottom: none;
+}
+
+/* ! Pricing Image */
+.pricing-img {
+  width: auto;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.pricing-header {
+  color: #888;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+/* ! Pricing Features */
+.pricing-features {
+  margin: 5% 0 3%;
+  color: #016ff9;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  padding: 0.7em 0;
+  border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+/* ! Pricing  */
+.pricing-price {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #016ff9;
+  display: block;
+}
+
+/* ! Pricing Button */
+.pricing-button {
 }
