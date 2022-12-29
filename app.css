@@ -83,7 +83,7 @@ body {
   min-height: 100vh;
 }
 
-/*? Removing Bullets */
+/*? Removing Bullet Point */
 ul {
   list-style: none;
 }
@@ -94,13 +94,14 @@ ul {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   margin: auto;
-  padding: 15px 20px;
-  width: 100%;
+  /* padding: 15px 20px; */
   max-width: 960px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   text-transform: uppercase;
+  /* justify-content: center; */
 }
 
 .pricing-plan {
@@ -113,27 +114,28 @@ ul {
 
 /* ! Pricing Image */
 .pricing-img {
-  width: auto;
+  /* width: auto; */
+  max-width: 100%;
   margin: auto;
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .pricing-header {
   color: #888;
-  font-size: 1.5em;
+  font-size: 600;
   letter-spacing: 1px;
 }
 
 /* ! Pricing Features */
 .pricing-features {
-  margin: 5% 0 3%;
+  margin: 5% 0 2.5%;
   color: #016ff9;
 }
 
 .pricing-features-item {
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 1.1em;
+  font-size: 0.8em;
   line-height: 1.5;
   padding: 0.7em 0;
   border-top: 1px solid #e1f1ff;
@@ -145,7 +147,7 @@ ul {
 
 /* ! Pricing  */
 .pricing-price {
-  font-size: 2.5em;
+  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 1px;
   color: #016ff9;
@@ -177,4 +179,21 @@ ul {
 .is-featured {
   background-color: #60a9ff;
   color: #fff;
+}
+
+/* Screen Resolution - Responsive Changes */
+
+@media screen and (min-width: 960px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: #e1f1ff 1px solid;
+    padding: 2.5% 5%;
+    flex: 1;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
 }
